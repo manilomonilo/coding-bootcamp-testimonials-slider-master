@@ -16,11 +16,24 @@
   <!-- test comment -->
   <main>
     <section class="background">
+       <!--
+       you can remove the alt of these images if they are only use as a background, icons and, just for display
+        -->
       <img src="images/pattern-bg.svg" alt="background image" class="bg bg-img1">
       <img src="images/pattern-quotes.svg" alt="background image" class="bg bg-img2">
       <img src="images/pattern-curve.svg" alt="background image" class="bg bg-img3">
 
       <div class="btns">
+       <!--
+         - add a type attribute to the buttons like type="button"
+         - hide the icon of the button using the attribute called aria-hidden
+           (<img src="./img/src" alt="image alt" aria-hidden>)
+
+        - add a label to the button using aria-label attribute something like this
+          (<button type="button" aria-label="next"></button>)
+
+          resources: https://jessijokes.medium.com/one-button-to-rule-them-all-465e294cba82 
+        -->
         <button class="btn"><img src="images/icon-prev.svg" alt="previous button" class="btn-icon"></button>
         <button class="btn"><img src="images/icon-next.svg" alt="next button" class="btn-icon"></button>
       </div>
@@ -49,6 +62,12 @@
     </section> -->
 
 
+    <!--
+     we are only going to need this section
+     
+     we are going to change the content of the text in their testimonials and the current image
+     once the user clicks the next button, we're gonna do it using JS
+    -->
     <section class="page john-tarkpor">
 
       <img src="images/image-john.jpg" alt="john image" class="pic john-pic">
@@ -59,10 +78,15 @@
       </p>
 
       <div class="name-job">
+        <!--
+         change this one to h2 instead of h1
+         h2 is going to be more suitable for this since a lot of the times
+         h1 is usually use on titles
+        -->
         <h1 class="name">
           John Tarkpor
         </h1>
-      
+        <!-- change this one to h3 instead of h2 -->
         <h2 class="job-title">
           Junior Front-end Developer
         </h2>
