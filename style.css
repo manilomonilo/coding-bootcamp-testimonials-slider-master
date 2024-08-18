@@ -29,6 +29,11 @@
 }
 
 body {
+    /*
+    -remove the width:100%; it's already the default
+    - use the min-height property instead of the height property when setting a height for a body
+    - (min-height:100vh;)
+    */
     width: 100%;
     height: 100vh;
     font-family: 'Inter', sans-serif;
@@ -127,6 +132,13 @@ body {
     padding: 30px;
 }
 
+/*
+ use the rem unit for this media query instead of px
+using a relative unit like rem instead of an absolute unit like 
+px is much better for resposiveness of the website
+
+resource to conver px to rem: https://nekocalc.com/px-to-rem-converter
+ */
 @media (min-width: 849px) {
     .background {
         .bg-img1 {
