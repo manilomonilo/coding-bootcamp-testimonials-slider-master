@@ -1,0 +1,183 @@
+@font-face {
+    font-family: Inter;
+    src: url(font/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+:root {
+    --dark-blue: hsl(240, 38%, 20%);
+    --grayish-blue: hsl(240, 18%, 77%);
+    --white: #FFF;
+
+    --fw-light: 300;
+    --fw-regular: 500;
+    --fw-bold: 700;
+
+    --h1: 19px;
+    --h2: 19px;
+    --font-size: 18px;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: 'Inter', sans-serif;
+    font-size: var(--font-size);
+    background-color: white;
+    position: relative;
+}
+
+.background {
+    .bg {
+        position: absolute;
+        z-index: -1;
+    }
+
+    .bg-img1 {
+        width: 300px;
+        top: 30px;
+        right: 50%;
+        transform: translate(50%);
+    }
+    .bg-img2 {
+        width: 50px;
+        top: 340px;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    .bg-img3 {
+        width: 300px;
+        bottom: 0;
+        left: 0;
+    }
+}
+
+.btns {
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--white);
+    width: 80px;
+    height: 40px;
+    border-radius: 20px;
+    top: 270px;
+    right: 50%;
+    transform: translate(50%);
+    z-index: 1;
+
+    .btn {
+        border: 0;
+        background-color: var(--white);
+    }
+
+    .btn-icon {
+        width: 10px;
+    }
+}
+
+.btns::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: -10px -10px 50px ;
+
+}
+
+.page {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.pic {
+    width: 230px;
+    margin-top: 60px;
+}
+
+.parg {
+    margin-top: 40px;
+    padding: 25px;
+    color: var(--dark-blue);
+}
+
+.name {
+    font-size: var(--h1);
+}
+
+.job-title {
+    font-size: var(--h2);
+    font-weight: var(--fw-regular);
+    color: var(--grayish-blue);
+}
+
+.john-parg {
+    padding: 30px;
+}
+
+@media (min-width: 849px) {
+    .background {
+        .bg-img1 {
+            width: 450px;
+            top: 110px;
+            right: 280px;
+        }
+        .bg-img2 {
+            width: 60px;
+            top: 220px;
+            left: 25%;
+        }
+        .bg-img3 {
+            width: 450px;
+            bottom: 0;
+            left: 0;
+        }
+    }
+
+    .btns {
+        top: 480px;
+        right: 385px;
+    }
+
+    .page {
+        text-align: unset;
+    }
+
+    .pic {
+        position: absolute;
+        width: 360px;
+        top: 80px;
+        right: 100px;
+    }
+
+    .parg {
+        position: absolute;
+        min-width: 465px;
+        font-size: 21px;
+        top: 190px;
+        left: 75px;
+        line-height: 1.5;
+        margin-right: 350px;
+    }
+
+    .name-job {
+        position: absolute;
+        display: flex;
+        gap: 10px;
+        top: 450px;
+        left: 100px;
+    }
+
+}
